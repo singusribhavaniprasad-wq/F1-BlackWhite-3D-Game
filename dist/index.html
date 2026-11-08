@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080808" />
+    <title>F1 — Monochrome Grand Prix</title>
+    <script type="module" crossorigin src="/assets/index-BVW4gVAN.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-zKwPePsQ.css">
+  </head>
+  <body>
+    <div id="app">
+      <div id="hud">
+        <div class="brand"><span class="eyebrow">MONOCHROME MOTORSPORT</span><strong>F1 <i>GRAND PRIX</i></strong></div>
+        <div class="race-stats">
+          <div class="stat"><small>LAP</small><b id="lap">0 / 5</b></div>
+          <div class="stat"><small>POSITION</small><b id="position">10 / 10</b></div>
+          <div class="stat"><small>SPEED</small><b><span id="speed">0</span><small> KM/H</small></b></div>
+          <div class="stat"><small>TIME</small><b id="time">00:00.000</b></div>
+        </div>
+        <div class="right-hud">
+          <div class="camera-tag" id="camera-label">CHASE CAMERA · C</div>
+          <div class="damage-wrap"><small>CAR CONDITION</small><div class="damage-track"><span id="damage-bar"></span></div><b id="damage-text">100%</b></div>
+        </div>
+      </div>
+      <div id="viewport"></div>
+      <div id="message" class="message"><div class="message-panel"><span class="eyebrow">5 LAP WORLD CHAMPIONSHIP</span><h1>LIGHTS OUT.</h1><p>One circuit. Nine rivals. Five laps.</p><button id="start-button" class="primary">START RACE <span>↗</span></button><div class="instructions">W / ↑ ACCELERATE &nbsp; · &nbsp; S / ↓ BRAKE &nbsp; · &nbsp; A D / ← → STEER &nbsp; · &nbsp; C CAMERA</div></div></div>
+      <div id="finish" class="overlay hidden"><div class="message-panel"><span class="eyebrow">CHEQUERED FLAG</span><h1 id="finish-title">RACE COMPLETE</h1><p id="finish-copy"></p><button id="again-button" class="primary">RACE AGAIN ↗</button></div></div>
+      <div class="bottom-left"><span class="dot"></span> LIVE RACE · 3D SIMULATION</div>
+      <div class="bottom-right"><button id="camera-button">CAMERA: CHASE</button><button id="pause-button">PAUSE</button></div>
+      <div id="touch-controls" class="touch-controls">
+        <div class="steer-controls"><button data-control="left">◀</button><button data-control="right">▶</button></div>
+        <div class="pedal-controls"><button data-control="brake">BRAKE</button><button data-control="accelerate" class="accelerate">THROTTLE</button></div>
+      </div>
+    </div>
+  </body>
+</html>
